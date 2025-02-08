@@ -130,7 +130,6 @@ For additional API methods, refer to the [Streamtape API documentation](https://
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
 ### Key Points:
 - The **installation** section explains how to install via Composer or manually.
