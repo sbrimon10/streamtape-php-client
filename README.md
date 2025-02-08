@@ -17,7 +17,7 @@ You can install this library either by using Composer or by manually downloading
 If you are using Composer, you can add this repository to your `composer.json`:
 
 ```bash
-composer require yourusername/streamtape-php-client
+composer require sbrimon/streamtape-php-client
 ```
 
 ### 2. Manual Installation
