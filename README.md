@@ -1,5 +1,3 @@
-
-```markdown
 # Streamtape PHP Client
 
 A simple PHP client for interacting with the [Streamtape API](https://www.streamtape.com/). This client allows you to manage files, retrieve account information, and perform other operations easily via an object-oriented interface.
@@ -19,7 +17,7 @@ You can install this library either by using Composer or by manually downloading
 If you are using Composer, you can add this repository to your `composer.json`:
 
 ```bash
-composer require yourusername/streamtape-php-client
+composer require sbrimon/streamtape-php-client
 ```
 
 ### 2. Manual Installation
@@ -132,7 +130,6 @@ For additional API methods, refer to the [Streamtape API documentation](https://
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
 ### Key Points:
 - The **installation** section explains how to install via Composer or manually.
