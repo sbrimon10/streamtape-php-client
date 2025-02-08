@@ -1,5 +1,3 @@
-
-```markdown
 # Streamtape PHP Client
 
 A simple PHP client for interacting with the [Streamtape API](https://www.streamtape.com/). This client allows you to manage files, retrieve account information, and perform other operations easily via an object-oriented interface.
