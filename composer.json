@@ -1,0 +1,13 @@
+{
+    "name": "sbrimon/streamtape-php-client",
+    "description": "A PHP client for the Streamtape API.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SbRimon\\Streamtape\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0"
+    }
+}
