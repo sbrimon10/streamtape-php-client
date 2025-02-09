@@ -227,6 +227,12 @@ echo "Thumbnail: " . $streamtape->json();
 ```
 
 ### Available Methods
+#### 0. `json()`
+- this method only use if you need only the json data. if doesnt need json data just use the main method like this 
+- **Example** 
+    - `$streamtape->ListFiles(); //this will return array data.`
+    
+    - `$streamtape->ListFiles()->json(); //this will return json data.`
 
 #### 1. `AccountInfo()`
 - **Parameters**: None
@@ -245,63 +251,63 @@ echo "Thumbnail: " . $streamtape->json();
 
 ---
 
-#### 9. NewFolder($name, $pid = null)
+#### 4. NewFolder($name, $pid = null)
 - **Parameters**:
   - `$name` (required): The name of the new folder to be created.
   - `$pid` (optional): Parent folder ID (if creating inside another folder).
 
 ---
 
-#### 10. `RenameFolder($folder, $name)`
+#### 5. `RenameFolder($folder, $name)`
 - **Parameters**:
   - `$folder` (required): The folder ID to rename.
   - `$name` (required): The new name for the folder.
 
 ---
 
-#### 11. `DeleteFolder($folder)`
+#### 6. `DeleteFolder($folder)`
 - **Parameters**:
   - `$folder` (required): The folder ID to delete.
 
 ---
 
-#### 12. `RenameFile($file, $name)`
+#### 7. `RenameFile($file, $name)`
 - **Parameters**:
   - `$file` (required): The file ID to rename.
   - `$name` (required): The new name for the file.
 
 ---
 
-#### 13. `MoveFile($file, $folder)`
+#### 8. `MoveFile($file, $folder)`
 - **Parameters**:
   - `$file` (required): The file ID to move.
   - `$folder` (required): The folder ID to move the file to.
 
 ---
 
-#### 14. `DeleteFile($file)`
+#### 9. `DeleteFile($file)`
 - **Parameters**:
   - `$file` (required): The file ID to delete.
 
 ---
 
-#### 15. `RunningConverts()`
+#### 10. `RunningConverts()`
 - **Parameters**: None
 
 ---
 
-#### 16. `FailedConverts()`
+#### 11. `FailedConverts()`
 - **Parameters**: None
 
 ---
 
-#### 17. `Thumbnail($file)`
+#### 12. `Thumbnail($file)`
 - **Parameters**:
   - `$file` (required): The file ID to get the thumbnail for.
 
 ---
 
-#### 18. `RemoteUpload($url, $folder = null, $name = null, $headers = null)`
+#### 13. `RemoteUpload($url, $folder = null, $name = null, $headers = null)`
 - **Parameters**:
   - `$url` (required): The remote URL to upload.
   - `$folder` (optional): The folder ID to upload the file to.
@@ -310,19 +316,19 @@ echo "Thumbnail: " . $streamtape->json();
 
 ---
 
-#### 19. `RemoveRemoteUpload($id)`
+#### 14. `RemoveRemoteUpload($id)`
 - **Parameters**:
   - `$id` (required): The remote upload ID to remove. Pass 'all' to remove all remote uploads.
 
 ---
 
-#### 20. `RemoteUploadStatus($id)`
+#### 15. `RemoteUploadStatus($id)`
 - **Parameters**:
   - `$id` (required): The remote upload ID to check the status of.
 
 ---
 
-#### 21. `Upload($videoFile, $fileName = null, $folder = null, $sha256 = null, $httponly = null)`
+#### 16. `Upload($videoFile, $fileName = null, $folder = null, $sha256 = null, $httponly = null)`
 - **Parameters**:
   - `$videoFile` (required): The file to upload (passed in a `$_FILES` array).
   - `$fileName` (optional): The desired file name on Streamtape.
