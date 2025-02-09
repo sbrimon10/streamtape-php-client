@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamtape File Upload</title>
+</head>
+<body>
+    <h1>Upload File to Streamtape</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file to upload:</label>
+        <input type="file" name="file" id="file" required><br><br>
+
+        <label for="fileName">Custom File Name (Optional):</label>
+        <input type="text" name="fileName" id="fileName" placeholder="Enter custom file name"><br><br>
+
+        <label for="folder">Folder ID (Optional):</label>
+        <input type="text" name="folder" id="folder" placeholder="Enter folder ID"><br><br>
+
+        <button type="submit" name="submit">Upload File</button>
+    </form>
+</body>
+</html>

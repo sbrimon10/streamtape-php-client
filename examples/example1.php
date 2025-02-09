@@ -6,11 +6,11 @@ require_once '../src/Streamtape.php';
 $streamtape = new Streamtape('your_login', 'your_api_key');
 
 // Get account info
-$accountInfo = $streamtape->accountInfo();
-echo "Account balance: " . $accountInfo['balance'] . "\n";
+$accountInfo = $streamtape->AccountInfo();
+echo "Account email: " . $accountInfo['email'] . "\n";
 
 // List files
-$files = $streamtape->listFiles();
+$files = $streamtape->ListFiles();
 foreach ($files['files'] as $file) {
-    echo "File: " . $file['filename'] . "\n";
+    echo "File: " . $file['name'] . "\n";
 }
