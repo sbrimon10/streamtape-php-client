@@ -146,12 +146,3 @@ class Streamtape {
 
     // Add more API methods as needed
 }
-
-// Usage Example:
-$streamtape = new Streamtape('d6feb5bc736d9baa83ba','Madbm7DMYoimX9q');
-// $accountInfo = $streamtape->accountInfo();
-// print_r($accountInfo);
- $fileInfo = $streamtape->fileInfo('Y72g8d7g9qH3WD,elb9JjbZleiYym3');
- print_r($fileInfo);
-// $fileList = $streamtape->listFiles();
-?>
