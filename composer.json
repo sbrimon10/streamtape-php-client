@@ -12,5 +12,13 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "license": "MIT"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SB Rimon",
+            "email": "sbrimon10@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["Streamtape","api","library"],
 }
