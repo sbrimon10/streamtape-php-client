@@ -41,6 +41,15 @@ class Streamtape {
     }
 
     /**
+    * Data on Array.
+    * 
+    * @return string The file information in Array format.
+    */
+    public function toArray() {
+         return $this->data;
+    }
+    
+    /**
      * Handle GET requests
      * 
      * @param string $endpoint API endpoint
