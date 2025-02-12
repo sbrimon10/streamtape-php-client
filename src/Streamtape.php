@@ -259,7 +259,7 @@ class Streamtape {
             'url' => $url,
             'folder' => $folder,
             'headers' => $headers ? urlencode($headers) : null,
-            'name' => $name ? urlencode($name) : null,
+            'name' => $name ? $name : null,
         ];
 
         $params = array_filter($params, function($value) {
