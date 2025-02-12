@@ -59,11 +59,11 @@ $streamtape = new Streamtape('your_login', 'your_api_key');
 
 ### Get Account Information
 
-You can retrieve your account information (such as balance) by calling the `AccountInfo()` method.
+You can retrieve your account information (such as email) by calling the `AccountInfo()` method.
 
 ```php
 // Get account information
-$AccountInfo = $streamtape->AccountInfo();
+$AccountInfo = $streamtape->AccountInfo()->toArray();
 echo "Email: " . $AccountInfo['email'] . "\n";
 ```
 
@@ -82,7 +82,7 @@ To upload a file, use the `Upload()` method. You can pass a file, and optionally
     echo "Upload Response: " . $upload->json();
     //or
     //Array Return
-    print_r($upload);
+    print_r($upload->toArray());
 }
 
 ```
@@ -123,7 +123,8 @@ To retrieve file information, use the `FileInfo()` method with the file ID.
 ```php
 // Get file information
 $fileInfo = $streamtape->FileInfo('file_id');
-echo "File Info: " . $fileInfo->json();
+echo "File Info: " . $fileInfo->json();//json data return
+echo "File Info: " . print_r($fileInfo->toArray());//array data return
 ```
 
 ### List Files
@@ -223,14 +224,14 @@ To retrieve a thumbnail image for a specific file, use the `Thumbnail()` method 
 ```php
 // Get thumbnail image for a file
 $streamtape->Thumbnail('file_id');
-echo "Thumbnail: " . $streamtape->json();
+echo "Thumbnail: " . $streamtape->json(); //$streamtape->toArray();
 ```
 
 ### Available Methods
-#### 0. `json()`
-- this method only use if you need only the json data. if doesnt need json data just use the main method like this 
+#### 0. `json()` or `toArray()`
+- those method return you json or array type data. you can use whichever you want to use 
 - **Example** 
-    - `$streamtape->ListFiles(); //this will return array data.`
+    - `$streamtape->ListFiles()->toArray(); //this will return array data.`
     
     - `$streamtape->ListFiles()->json(); //this will return json data.`
 
